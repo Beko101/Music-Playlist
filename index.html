@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Müzik Çalma Listeleri</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Müzik Çalma Listeleri</h1>
+        <form action="process.php" method="POST">
+            <label for="music_service">Müzik Hizmeti:</label>
+            <select id="music_service" name="music_service">
+                <option value="spotify">Spotify</option>
+                <option value="apple_music">Apple Music</option>
+                <option value="amazon_music">Amazon Music</option>
+                <option value="deezer">Deezer</option>
+            </select>
+            <br><br>
+            <label for="access_token">Erişim Belirteci:</label>
+            <input type="text" id="access_token" name="access_token">
+            <br><br>
+            <input type="submit" value="Gönder" class="button">
+        </form>
+    </div>
+</body>
+</html>
